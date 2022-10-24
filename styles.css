@@ -1,0 +1,46 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: pink;
+  color: white
+}
+div {
+  background-color: green;
+}
+
+
+nav {
+  background-color: black;
+  
+}
+
+.fas {
+  padding: 15px;
+}
+
+/* affects the drop down */
+.dropdown-box {
+  
+  width: 25%;
+  background-color: lightgreen;
+  box-shadow: 5px 15px 5px darkgreen;
+  margin-left: 25px;
+
+}
+
+li {
+  list-style-type: none;
+  padding: 5px;
+}
+
+
+
+
+
+li:hover {
+  background-color: grey;
+}
+
