@@ -7,14 +7,18 @@ body {
   background-color: pink;
   color: white
 }
+
 div {
   background-color: green;
 }
 
+.hula {
+  display: none;
+}
 
 nav {
   background-color: black;
-  
+
 }
 
 .fas {
@@ -23,7 +27,7 @@ nav {
 
 /* affects the drop down */
 .dropdown-box {
-  
+  display: none;
   width: 25%;
   background-color: lightgreen;
   box-shadow: 5px 15px 5px darkgreen;
@@ -36,11 +40,40 @@ li {
   padding: 5px;
 }
 
-
-
-
-
 li:hover {
   background-color: grey;
 }
 
+nav:hover .dropdown-box {
+  display: block;
+  position: absolute;
+  z-index: 20;
+}
+
+@media screen and (min-width:576px) {
+  .dropdown-box {
+    display: block;
+    width: 100%;
+    margin:0px;
+  }
+  .fas{
+    display: none;
+  }
+  nav:hover .dropdown-box{
+    position:static;
+    
+  }
+  
+  .hula {
+    display: block;
+    background-color: purple;
+  }
+}
+@media screen and (min-width:768px){
+  li{
+    display: inline-block;
+  }
+  .hula{
+    background-color: yellow;
+  }
+}
